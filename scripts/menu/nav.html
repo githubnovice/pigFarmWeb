@@ -1,0 +1,142 @@
+<!-- Search box -->
+<!--<div class="form-search">
+	<form id="site-search" action="#na">
+		<input type="search" class="form-control" placeholder="Enter your query...">
+		<button type="submit" class="fa fa-search"></button>
+	</form>
+</div>-->
+
+
+<!-- Site nav (vertical) -->
+
+<nav class="site-nav clearfix" role="navigation" collapse-nav-accordion highlight-active>
+	<div class="nav-title panel-heading"><i>菜单</i></div>
+	<ul class="list-unstyled nav-list">
+		<li>
+			<a href="#/homepage">
+				<i class="fa fa-desktop icon"></i>
+				<span class="text">首页</span>
+			</a>
+		</li>
+	</ul>
+	<ul class="list-unstyled nav-list">
+		<li>
+			<a href="javascript:;">
+				<i class="fa fa-paint-brush icon"></i>
+				<span class="text">饲料管理</span>
+				<i class="arrow fa fa-angle-right right"></i>
+			</a>
+			<ul class="inner-drop list-unstyled">
+				<li><a href="#/feedstorage">饲料进库</a></li>
+				<li><a href="#/feeduse">饲料使用</a></li>
+			</ul>
+		</li>
+		<li>
+			<a href="javascript:;">
+				<i class="fa fa-building icon"></i>
+				<span class="text">生猪管理</span>
+				<i class="arrow fa fa-angle-right right"></i>
+			</a>
+			<ul class="inner-drop list-unstyled">
+				<li><a href="#">猪仔入库</a></li>
+				<li><a href="#">生猪死淘</a></li>
+				<li><a href="#">生猪异常</a></li>
+			</ul>
+		</li>
+		<li>
+			<a href="javascript:;">
+				<i class="fa fa-table icon"></i>
+				<span class="text">数据管理</span>
+				<i class="arrow fa fa-angle-right right"></i>
+			</a>
+			<ul class="inner-drop list-unstyled">
+				<li><a href="#/tables/static-table">材料进库</a></li>
+				<li><a href="#/tables/static-table">材料使用日志</a></li>
+				<li><a href="#/tables/data-table">日常支出</a></li>
+			</ul>
+		</li>
+		<li>
+			<a href="javascript:;">
+				<i class="fa fa-file-text icon"></i>
+				<span class="text">账户管理</span>
+				<i class="arrow fa fa-angle-right right"></i>
+			</a>
+			<ul class="inner-drop list-unstyled">
+				<li><a href="#/pages/register">角色管理</a></li>
+				<li><a href="#/pages/login">权限管理</a></li>
+				<li><a href="#/pages/forget-pass">账户管理</a></li>
+			</ul>
+		</li>
+		<li>
+			<a href="javascript:;">
+				<i class="fa fa-pie-chart icon"></i>
+				<span class="text">数据统计</span>
+				<i class="arrow fa fa-angle-right right"></i>
+			</a>
+			<ul class="inner-drop list-unstyled">
+				<li><a href="#/pages/invoice">支出统计</a></li>
+				<li><a href="#/pages/profile">猪仔统计</a></li>
+				<li><a href="#/pages/timeline">材料统计</a></li>
+			</ul> 
+		</li>
+			<li>
+			<a href="javascript:;">
+				<i class="fa fa-leaf icon"></i>
+				<span class="text">薪资管理</span>
+				<i class="arrow fa fa-angle-right right"></i>
+			</a>
+			<ul class="inner-drop list-unstyled">
+				<li><a href="#/pages/timeline">工资计算</a></li>
+				<li><a href="#/pages/invoice">工资记录</a></li>
+			</ul>
+		</li>
+	</ul>
+</nav>
+
+
+<!-- theme settings -->
+<div class="theme-settings clearfix">
+	<div class="panel-heading"><i>主题选择</i></div>
+	<ul class="list-unstyled clearfix">
+		<li ng-class="{active: theme-zero}" ng-model="themeModel" btn-radio="'theme-zero'" ng-change="onThemeChange(themeModel)">
+			<a href="javascript:;">
+				<span class="side-top"></span>
+				<span class="header"></span>
+				<span class="side-rest"></span>
+			</a>
+		</li>
+
+		<li ng-class="{active: theme-one}" ng-model="themeModel" btn-radio="'theme-one'" ng-change="onThemeChange(themeModel)">
+			<a href="javascript:;">
+				<span class="side-top"></span>
+				<span class="header"></span>
+				<span class="side-rest"></span>
+			</a>
+		</li>
+
+		<li ng-class="{active: theme-two}" ng-model="themeModel" btn-radio="'theme-two'" ng-change="onThemeChange(themeModel)">
+			<a href="javascript:;">
+				<span class="side-top"></span>
+				<span class="header"></span>
+				<span class="side-rest"></span>
+			</a>
+		</li>
+
+		<li ng-class="{active: theme-three}" ng-model="themeModel" btn-radio="'theme-three'" ng-change="onThemeChange(themeModel)">
+			<a href="javascript:;">
+				<span class="side-top"></span>
+				<span class="header"></span>
+				<span class="side-rest"></span>
+			</a>
+		</li>
+
+		<li ng-class="{active: theme-four}" ng-model="themeModel" btn-radio="'theme-four'" ng-change="onThemeChange(themeModel)">
+			<a href="javascript:;">
+				<span class="side-top"></span>
+				<span class="header"></span>
+				<span class="side-rest"></span>
+			</a>
+		</li>
+	</ul>
+</div>
+<!-- #end theme settings -->

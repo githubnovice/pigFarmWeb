@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="description" content="Appboard - Admin Template with Angularjs">
+    <meta name="keywords" content="appboard, webapp, admin, dashboard, template, ui">
+    <meta name="author" content="solutionportal">
+    <link rel="icon" href="../../images/Icon.jpg" type="image/x-icon">
+    <!-- <base href="/"> -->
+
+    <title>首页</title>
+
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+    <!-- Icons -->
+    <link rel="stylesheet" type="text/css" href="http://www.jq22.com/jquery/font-awesome.4.6.0.css">
+
+
+    <!-- Set this in dist folder in index.html file -->
+    <link rel="stylesheet" type="text/css" href="http://www.jq22.com/jquery/bootstrap-3.3.4.css">
+    <link rel="stylesheet" href="../../styles/main.min.css">
+
+    <!-- Match Media polyfill for IE9 -->
+    <!--[if IE 9]><!-->
+    <script src="../../scripts/ie/matchMedia.js"></script>
+    <!--<![endif]-->
+
+    <!--<script src='/google_analytics_auto.js'></script>-->
+</head>
+
+<body ng-app="app" id="app" class="app {{themeActive}}" custom-page ng-controller="AppCtrl">
+    <header class="site-head clearfix" id="site-head" ng-controller="HeadCtrl" ng-include=" 'header.html' ">
+        <!-- linked header (static) view -->
+    </header>
+    <div class="main-container clearfix">
+        <aside class="nav-wrap" id="site-nav" ng-controller="NavCtrl" ng-include=" 'nav.html' " custom-scrollbar>
+
+        </aside>
+
+        <div class="content-container" id="content" ng-view>
+            <!-- content using routing -->
+        </div>
+
+    </div>
+
+    <!-- Set this in dist index.html -->
+    <script src="../../scripts/vendors.js"></script>
+    <script src="../../scripts/plugins.js"></script>
+    <script src="../../scripts/app.js"></script>
+
+    <!-- !End -->
+</body>
+
+</html>
